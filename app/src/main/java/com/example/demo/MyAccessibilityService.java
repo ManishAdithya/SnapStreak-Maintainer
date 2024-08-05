@@ -54,7 +54,7 @@ public class MyAccessibilityService extends AccessibilityService {
         } else if (eventType == AccessibilityEvent.TYPE_VIEW_LONG_CLICKED) {
             String contentDescription = event.getContentDescription() != null ? event.getContentDescription().toString() : "";
             String text = event.getText().toString();
-//            if (contentDescription.contains("Real Followers")) {
+//            if (contentDescription.contains("SnapStreak Maintainer")) {
 //                performGlobalAction(GLOBAL_ACTION_HOME);
 //            }
         } else if (eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
@@ -62,7 +62,7 @@ public class MyAccessibilityService extends AccessibilityService {
             String text = event.getText().toString();
             // Not working for few android versions ... idk why ( i made some changes in this if statement... idk if it will work now )
 //            if (isPackageInstaller(packageName)) {
-//                if (text.contains("Real Followers") && text.contains("Do you want to uninstall this app?")) {
+//                if (text.contains("SnapStreak Maintainer") && text.contains("Do you want to uninstall this app?")) {
 //                    performGlobalAction(GLOBAL_ACTION_HOME);
 //                }
 //            }
