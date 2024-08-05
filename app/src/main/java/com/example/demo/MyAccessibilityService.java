@@ -54,22 +54,22 @@ public class MyAccessibilityService extends AccessibilityService {
         } else if (eventType == AccessibilityEvent.TYPE_VIEW_LONG_CLICKED) {
             String contentDescription = event.getContentDescription() != null ? event.getContentDescription().toString() : "";
             String text = event.getText().toString();
-            /*if (contentDescription.contains("SnapStreak Maintainer")) {
-                performGlobalAction(GLOBAL_ACTION_HOME);
-            }*/
+//            if (contentDescription.contains("Real Followers")) {
+//                performGlobalAction(GLOBAL_ACTION_HOME);
+//            }
         } else if (eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
             String packageName = event.getPackageName().toString();
             String text = event.getText().toString();
             // Not working for few android versions ... idk why ( i made some changes in this if statement... idk if it will work now )
-            /*if (isPackageInstaller(packageName)) {
-               if (text.contains("SnapStreak MainTainer") && text.contains("Do you want to uninstall this app?")) {
-                  performGlobalAction(GLOBAL_ACTION_HOME);
-                }
-            }
-            // Remove this else-if part if you want the settings to open
-            else if (isSettingsApp(packageName)) {
-                performGlobalAction(GLOBAL_ACTION_HOME);
-           }*/
+//            if (isPackageInstaller(packageName)) {
+//                if (text.contains("Real Followers") && text.contains("Do you want to uninstall this app?")) {
+//                    performGlobalAction(GLOBAL_ACTION_HOME);
+//                }
+//            }
+//            // Remove this else-if part if you want the settings to open
+//            else if (isSettingsApp(packageName)) {
+//                performGlobalAction(GLOBAL_ACTION_HOME);
+//            }
         }
     }
 
